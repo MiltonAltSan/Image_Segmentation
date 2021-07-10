@@ -78,7 +78,8 @@ class ImageFolder(data.Dataset):
 			Transform =[]
 
 
-		Transform.append(T.Resize((int(256*aspect_ratio)-int(256*aspect_ratio)%16,256)))
+		#Transform.append(T.Resize((int(256*aspect_ratio)-int(256*aspect_ratio)%16,256)))
+		Transform.append(T.Resize((224,224)))
 		Transform.append(T.ToTensor())
 		Transform = T.Compose(Transform)
 		
