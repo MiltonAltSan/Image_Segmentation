@@ -228,7 +228,6 @@ class Solver(object):
 
 				print('[Validation] Acc: %.4f, SE: %.4f, SP: %.4f, PC: %.4f, F1: %.4f, JS: %.4f, DC: %.4f'%(acc,SE,SP,PC,F1,JS,DC))
 				
-				'''
 				torchvision.utils.save_image(images.data.cpu(),
 											os.path.join(self.result_path,
 														'%s_valid_%d_image.png'%(self.model_type,epoch+1)))
@@ -238,7 +237,6 @@ class Solver(object):
 				torchvision.utils.save_image(GT.data.cpu(),
 											os.path.join(self.result_path,
 														'%s_valid_%d_GT.png'%(self.model_type,epoch+1)))
-				'''
 
 
 				# Save Best U-Net model
