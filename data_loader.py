@@ -86,8 +86,8 @@ class ImageFolder(data.Dataset):
 		image = Transform(image)
 		GT = Transform(GT)
 
-		Norm_ = T.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
-		image = Norm_(image)
+		#Norm_ = T.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+		#image = Norm_(image)
 
 		return image, GT
 
